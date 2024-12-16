@@ -398,9 +398,41 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[3]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791582699856113606, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791582699856113606, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4994818196982604336, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_Name
       value: Enemy (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995040550694834146, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 7121294143096883603, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -961,9 +993,37 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[0]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1076359384344175249, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: waypointArray.Array.data[2]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 2791582699856113606, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4994818196982604336, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_Name
       value: Enemy (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995040550694834146, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995040550694834146, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7121294143096883603, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1408,9 +1468,17 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2791582699856113606, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 1.5
+      objectReference: {fileID: 0}
     - target: {fileID: 4994818196982604336, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_Name
       value: Enemy
+      objectReference: {fileID: 0}
+    - target: {fileID: 5995040550694834146, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 7121294143096883603, guid: 370341fd792b58d4880575a824ba6cad, type: 3}
       propertyPath: m_LocalPosition.x
