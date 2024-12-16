@@ -5,7 +5,7 @@ using UnityEngine;
 public class PointTowardMouse : MonoBehaviour
 {
     Camera cam;
-    Vector2 MousePos
+    public Vector2 MousePos
     {
         get
         {
@@ -23,7 +23,7 @@ public class PointTowardMouse : MonoBehaviour
     {
         Vector2 dir = (Vector2)transform.position - MousePos;
         float angle = (Mathf.Atan2(dir.y, dir.x) * Mathf.Rad2Deg);
-        transform.eulerAngles = new Vector3(0f, 0f, angle + 180f);
+        transform.eulerAngles = new Vector3(0f, 0f, angle+180);
     }
 
 }

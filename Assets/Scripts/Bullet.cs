@@ -29,4 +29,13 @@ public class Bullet : MonoBehaviour
         Shoot(newVelocity.normalized);
     }
 
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
+        {
+            life--;
+            Destroy(collision.gameObject);
+        }
+    }
+
 }
