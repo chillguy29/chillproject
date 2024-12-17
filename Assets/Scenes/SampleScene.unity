@@ -824,6 +824,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bulletPrefabs: {fileID: -6454469062350977470, guid: dd4f61173b7dfcb4c8f17c2e5da1efa9, type: 3}
   bulletSpawnPos: {fileID: 775904634}
+  maxAmmo: 3
 --- !u!1 &1427332572
 GameObject:
   m_ObjectHideFlags: 0
@@ -836,6 +837,7 @@ GameObject:
   - component: {fileID: 1427332576}
   - component: {fileID: 1427332575}
   - component: {fileID: 1427332577}
+  - component: {fileID: 1427332578}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -954,6 +956,18 @@ MonoBehaviour:
     m_Bits: 64
   pointTowardMouse: {fileID: 473400037}
   playerVisual: {fileID: 964638793}
+--- !u!114 &1427332578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427332572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1971cd2368f9894b9df035193a54a1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1631573817
 GameObject:
   m_ObjectHideFlags: 0
