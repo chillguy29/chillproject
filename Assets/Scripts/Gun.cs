@@ -6,7 +6,8 @@ public class Gun : MonoBehaviour
 {
     [SerializeField] Bullet bulletPrefabs;
     [SerializeField] Transform bulletSpawnPos;
-
+    [SerializeField] private int maxAmmo = 3;
+    private int currentAmmo;
     private Camera cam;
     Vector2 MousePos
     {
@@ -22,14 +23,28 @@ public class Gun : MonoBehaviour
         cam = Camera.main;
     }
 
-    private void Update()
+    private void Start()
     {
+        currentAmmo = maxAmmo;
+    }
+
+    private void Update()
+    {   
         if (Input.GetMouseButtonDown(0))
         {
-            Vector2 direction = MousePos - (Vector2)transform.position;
-            Bullet bullet = Instantiate(bulletPrefabs, bulletSpawnPos.position, Quaternion.identity);
-            bullet.Shoot(direction.normalized);
+            if (currentAmmo > 0) {
+                currentAmmo--;
+                ShootBullet();
+            }
+            
         }
-
     }
+
+    private void ShootBullet ()
+    {
+        Vector2 direction = MousePos - (Vector2)transform.position;
+        Bullet bullet = Instantiate(bulletPrefabs, bulletSpawnPos.position, Quaternion.identity);
+        bullet.Shoot(direction.normalized);
+    }
+
 }
