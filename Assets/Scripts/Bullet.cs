@@ -22,20 +22,13 @@ public class Bullet : MonoBehaviour
         {
             Destroy(gameObject);
             return;
-        }
+        }      
 
         var firstContact = collision.contacts[0];
         Vector2 newVelocity = Vector2.Reflect(direction.normalized, firstContact.normal);
         Shoot(newVelocity.normalized);
     }
 
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.TryGetComponent<Enemy>(out Enemy enemy))
-        {
-            life--;
-            Destroy(collision.gameObject);
-        }
-    }
+    
 
 }

@@ -47,4 +47,10 @@ public class Gun : MonoBehaviour
         bullet.Shoot(direction.normalized);
     }
 
+    public void Reload()
+    {
+        currentAmmo++;
+    }
+
+   
 }

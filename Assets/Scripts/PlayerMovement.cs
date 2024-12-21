@@ -7,14 +7,10 @@ public class PlayerMovement : MonoBehaviour
     private float horizontal;
     [SerializeField] private float jumpingPower = 16f;
     [SerializeField] private float speed = 8f;
-    private bool isFacingRight = true;
-
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
     [SerializeField] private PointTowardMouse pointTowardMouse;
-    [SerializeField] private PlayerVisual playerVisual;
-    // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal");
@@ -29,7 +25,6 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector2(rb.velocity.x, rb.velocity.y * 0.5f);
         }
         */
-        playerVisual.Flip();
     }
 
     private void FixedUpdate()
